@@ -59,3 +59,4 @@ waypoints[0]['name'] = 'not a real place'
 
 for x in waypoints:
     print(x['lat'], x['lon'], x['name'])
+# ? python seems to use [] notation vs . notation as with objects in js

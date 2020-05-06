@@ -19,9 +19,9 @@ def f2(num1, *args):
     for num in args:
         total = total + num
     return total
-# assumes at least one number, assigns it to total (Similar to current value in js reduce()). If additional *args/arguments/numbers exist, loop through and add to 'total'.
+# ? assumes at least one number, assigns it to total (Similar to current value in js reduce()). If additional *args/arguments/numbers exist, loop through and add to 'total'.
 
-print("f2, should be 1:", f2(1))                    # Should print 1
+print("f2, should be 1:", f2(1))                   # Should print 1
 print("f2, should be 4:",f2(1, 3))                 # Should print 4
 print("f2: should be -7",f2(1, 4, -12))            # Should print -7
 print("f2 should be 33:",f2(7, 9, 1, 3, 4, 9, 0))  # Should print 33
@@ -56,7 +56,7 @@ print("f3 should be 9:", f3(8))     # Should print 9
 def f4(**kwargs):
     for key, value in kwargs.items(): 
         print ("key: %s, value: %s" %(key, value)) 
-# loops through kwargs parameters for key, value, print line is just like what we did in 04_printing.py
+# ? loops through kwargs parameters for key, value, print line is just like what we did in 04_printing.py
 
 # Should print
 # key: a, value: 12
@@ -76,4 +76,4 @@ d = {
 
 # How do you have to modify the f4 call below to make this work?
 f4(**d)
-# hp key value is an integer and not a string
+# ? difference is that the hp value is an integer and not a string, need ** to access/spread the kwargs to display the int

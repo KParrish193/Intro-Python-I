@@ -6,11 +6,13 @@ class LatLon:
     def __init__(self, lat, lon):
         self.lat = lat
         self.lon = lon
+# ? Notes: self is similar to .this keyword in React in reference to class components and props
 
 # Make a class Waypoint that can be passed parameters `name`, `lat`, and `lon` to the
 # constructor. It should inherit from LatLon. Look up the `super` method.
 
 # YOUR CODE HERE
+# ? using LatLon as a callback in Class Waypoint
 class Waypoint(LatLon):
     def __init__(self, name, lat, lon):
         super().__init__(lat, lon)
